@@ -150,6 +150,31 @@
     
     
     <entry>
+      <title>【QT】使用QCustomPlot函数输出2个波形时，某个坐标轴波形不显示的问题</title>
+      <link href="/2024/04/24/%E4%BD%BF%E7%94%A8QCustomPlot%E5%87%BD%E6%95%B0%E8%BE%93%E5%87%BA2%E4%B8%AA%E6%B3%A2%E5%BD%A2%E6%97%B6%EF%BC%8C%E6%9F%90%E4%B8%AA%E5%9D%90%E6%A0%87%E8%BD%B4%E6%B3%A2%E5%BD%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2024/04/24/%E4%BD%BF%E7%94%A8QCustomPlot%E5%87%BD%E6%95%B0%E8%BE%93%E5%87%BA2%E4%B8%AA%E6%B3%A2%E5%BD%A2%E6%97%B6%EF%BC%8C%E6%9F%90%E4%B8%AA%E5%9D%90%E6%A0%87%E8%BD%B4%E6%B3%A2%E5%BD%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>前段时间在使用QCustomPlot函数对所需要显示的波形进行输出时，遇到一个非常棘手的问题，那就是当我输出两个波形时，只显示了一个波形。搞笑的是，需要拖动一下不显示波形的界面，这个波形才能显示，表明我的程序是没有问题的。<br>今天偶然之间，给波形添加了label，波形竟然神奇般的自己显示了出来，不需要自己拖动了。</p><div class="note default simple"><p>qDebug()&lt;&lt;”BEGIN PLOT”;<br>ui-&gt;customPlot-&gt;addGraph();<br>ui-&gt;customPlot-&gt;graph(0)-&gt;setData(x,y);<br>ui-&gt;customPlot-&gt;xAxis-&gt;setLabel(“时间&#x2F;s”);<br>ui-&gt;customPlot-&gt;graph(0)-&gt;rescaleAxes();<br>ui-&gt;customPlot-&gt;xAxis-&gt;setRange(0, 6);<br>ui-&gt;customPlot-&gt;setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);<br>ui-&gt;customPlot-&gt;replot();</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> Debug记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Python】pip install librosa失败的解决方案</title>
       <link href="/2024/04/24/pip-install-librosa%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
       <url>/2024/04/24/pip-install-librosa%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
@@ -180,31 +205,6 @@
       <url>/2024/04/24/%E5%87%BA%E7%8E%B0%E2%80%9Ccommand-aborted%E2%80%9D%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       
         <content type="html"><![CDATA[<p>尝试了网上的删除C:\Users\Administrator\AppData\Roaming\QtProject文件夹并重启的方法，依然没有作用，最后只能重新安装软件，问题得到解决！</p><p>tips：重新下载安装包时，发现我这个5.12.11版本在镜像中没有，而官网下载又很慢，将其下载链接添加到迅雷中进行下载，速度得到了很大的提升，非常推荐朋友们试试！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Debug记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> QT </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>【QT】使用QCustomPlot函数输出2个波形时，某个坐标轴波形不显示的问题</title>
-      <link href="/2024/04/24/%E4%BD%BF%E7%94%A8QCustomPlot%E5%87%BD%E6%95%B0%E8%BE%93%E5%87%BA2%E4%B8%AA%E6%B3%A2%E5%BD%A2%E6%97%B6%EF%BC%8C%E6%9F%90%E4%B8%AA%E5%9D%90%E6%A0%87%E8%BD%B4%E6%B3%A2%E5%BD%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-      <url>/2024/04/24/%E4%BD%BF%E7%94%A8QCustomPlot%E5%87%BD%E6%95%B0%E8%BE%93%E5%87%BA2%E4%B8%AA%E6%B3%A2%E5%BD%A2%E6%97%B6%EF%BC%8C%E6%9F%90%E4%B8%AA%E5%9D%90%E6%A0%87%E8%BD%B4%E6%B3%A2%E5%BD%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p>前段时间在使用QCustomPlot函数对所需要显示的波形进行输出时，遇到一个非常棘手的问题，那就是当我输出两个波形时，只显示了一个波形。搞笑的是，需要拖动一下不显示波形的界面，这个波形才能显示，表明我的程序是没有问题的。<br>今天偶然之间，给波形添加了label，波形竟然神奇般的自己显示了出来，不需要自己拖动了。</p><div class="note default simple"><p>qDebug()&lt;&lt;”BEGIN PLOT”;<br>ui-&gt;customPlot-&gt;addGraph();<br>ui-&gt;customPlot-&gt;graph(0)-&gt;setData(x,y);<br>ui-&gt;customPlot-&gt;xAxis-&gt;setLabel(“时间&#x2F;s”);<br>ui-&gt;customPlot-&gt;graph(0)-&gt;rescaleAxes();<br>ui-&gt;customPlot-&gt;xAxis-&gt;setRange(0, 6);<br>ui-&gt;customPlot-&gt;setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);<br>ui-&gt;customPlot-&gt;replot();</p></div>]]></content>
       
       
       <categories>
